@@ -4,7 +4,7 @@ class BioComponent extends Component {
     render() {
         return(
             <div>
-                Hello
+                Hello my name is Levi Flippo. 
             </div>
         )
     }
