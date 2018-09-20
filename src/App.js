@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import BioComponent from './BioComponent';
 import LinkButtonComponent from './LinkButtonComponent';
+import SkillsComponent from './SkillsComponent';
 
 class App extends Component {
   state = {
@@ -25,7 +26,7 @@ class App extends Component {
         case 2:
             return (
                 <div>
-                    These are my skills!
+                    <SkillsComponent/>
                 </div>
             )   
         case 3:
