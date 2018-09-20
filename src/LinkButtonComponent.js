@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
 
 class LinkButtonComponent extends Component {
 
@@ -9,7 +10,11 @@ class LinkButtonComponent extends Component {
     render() {
         return(
             <div>
-                <button onClick={()=>{this.openLink(this.props.link)}}>{this.props.name}</button>
+                <Button 
+                    variant="contained" color="primary"
+                    onClick={()=>{this.openLink(this.props.link)}}>
+                        {this.props.name}
+                </Button>
             </div>
         )
     }
