@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 
-class LinkButtonComponent extends Comment {
+class LinkButtonComponent extends Component {
+
+    openLink(link) {
+        window.open(link);
+    } 
+
     render() {
         return(
-            <Button>Button</Button>
+            <div>
+                <button onClick={()=>{this.openLink(this.props.link)}}>{this.props.name}</button>
+            </div>
         )
     }
 }

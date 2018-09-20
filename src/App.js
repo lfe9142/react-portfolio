@@ -10,7 +10,9 @@ class App extends Component {
       <div className="App">
        <h1>Levi Flippo</h1>
        <BioComponent/>
-       <LinkButtonComponent/>
+       <LinkButtonComponent name="Github" link="https://github.com/lfe9142"/>
+       <LinkButtonComponent name="LinkedIn" link="https://www.linkedin.com/in/levi-flippo-7443b6145/"/>
+
       </div>
     );
   }
